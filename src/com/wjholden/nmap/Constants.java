@@ -17,10 +17,6 @@ class Constants {
 	public final static int DB_OPEN = 301;
 	public final static int DB_CLOSE = 302;
 	
-	public final static int LICENSE_ALLOW = 400;
-	public final static int LICENSE_FAIL = -401;
-	public final static int LICENSE_ERROR = -402;
-
 	public final static String TAG = "PIPS";
 
 	public static final int DATABASE_VERSION = 3;

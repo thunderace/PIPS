@@ -92,10 +92,6 @@ public class MainActivity extends Activity {
 
 		context = this.getApplicationContext();
 		
-		btnStart.setEnabled(false); // must be enabled by license server
-		PipsLicensing license = new PipsLicensing(context);
-		license.start();
-		
 		btnStart.setOnClickListener(new View.OnClickListener() {
 
 			public void onClick(View v) {
@@ -276,9 +272,6 @@ public class MainActivity extends Activity {
 					String result = (String) msg.obj;
 					txtResults.setText(result);
 	
-					PipsLicensing license = new PipsLicensing(context);
-					license.start();
-					
 					bindAutoCompleteAdapter(); // rebind now that data is changed.
 					break;
 				case Constants.DB_SHOW_LAST_RESULT:
@@ -301,24 +294,6 @@ public class MainActivity extends Activity {
 					break;
 				case Constants.DB_OPEN:
 					bindAutoCompleteAdapter();
-					break;
-				case Constants.LICENSE_ALLOW:
-					btnStart.setEnabled(true);
-					break;
-				case Constants.LICENSE_FAIL:
-				case Constants.LICENSE_ERROR:
-					btnStart.setEnabled(false);
-					AlertDialog.Builder alertLicensing = new AlertDialog.Builder(
-							MainActivity.this).setPositiveButton("OK",
-							new DialogInterface.OnClickListener() {
-
-								public void onClick(DialogInterface dialog,
-										int which) {
-									dialog.dismiss();
-								}
-							});
-					alertLicensing.setMessage("License verification failed. Contact developer at wjholden@gmail.com.");
-					alertLicensing.show();
 					break;
 				default:
 					PipsError.log("Handler received unexpected message that the switch statement does not allow.");
