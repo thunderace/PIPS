@@ -12,8 +12,8 @@
 	<string name="defaultText">Texte par défaut</string>
 	<string name="Open">Ouvrie</string>
 	<string name="Delete">Supprimer</string>
-	<string name="illegalStateExceptionError">PIPS à rencontrer une problème en essayant d'ouvrir la base de données de votre scan précédent. Pour résoudre ce problème, nous avons besoin d\'informations. Envoyer ces informations?</string>
-	<string name="gpl">Ce programme est fourni sous licence GPL V2. Le programme 'Nmap Security Scanner ©' a des exigences et des interprétations additionnelles de cette licence GPL : voir http://insecure.org.</string>
+	<string name="illegalStateExceptionError">PIPS à rencontrer une problème en essayant d\'ouvrir la base de données de votre scan précédent. Pour résoudre ce problème, nous avons besoin d\'informations. Envoyer ces informations?</string>
+	<string name="gpl">Ce programme est fourni sous licence GPL V2. Le programme \'Nmap Security Scanner ©\' a des exigences et des interprétations additionnelles de cette licence GPL : voir http://insecure.org.</string>
 	<string name="ScanSubnet">Scanner par sous réseau</string>
 	<string name="Clear">Effacer</string>
 	<string name="longPress">Appui long sur un élément pour ouvrir, partager et supprimer.</string>
@@ -21,7 +21,7 @@
 	<string name="Options">Options</string>
 	<string name="forceRoot">Forcer le mode root</string>
 	<string name="forceRootDesc">Utiliser la commande &quot;su&quot; pour obtenir les privilèges root.</string>
-	<string name="saveHistory">Sauver l'historique</string>
+	<string name="saveHistory">Sauver l\'historique</string>
 	<string name="saveHistoryDesc">Suver les résultats dans la base de données accessible uniquement par ce programme.</string>
 	<string name="showLogcat">Logcat</string>
 	<string name="showLogcatDesc">Affiche les informations logcat pour développement et debug.</string>
